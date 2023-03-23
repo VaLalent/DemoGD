@@ -36,4 +36,9 @@ public class SpinAction : BaseAction
         totalSpinAmount = 0f;
         Debug.Log("Spinning");
     }
+
+    public override string GetActionName()
+    {
+        return "Spin";
+    }
 }
