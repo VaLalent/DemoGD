@@ -17,6 +17,7 @@ public class ShootAction : BaseAction
     }
     private State state;
     private Unit targetUnit;
+    public event EventHandler OnShoot;
 
     public void Update()
     {
@@ -74,6 +75,7 @@ public class ShootAction : BaseAction
 
     private void Shoot()
     {
+        OnShoot?.Invoke(this, EventArgs.Empty);
         targetUnit.Damage();
     }
 
