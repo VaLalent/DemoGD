@@ -2803,6 +2803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endTurnButton: {fileID: 14262952}
   turnCountText: {fileID: 720370204}
+  enemyTurnObject: {fileID: 0}
 --- !u!1001 &2848036714094576436
 PrefabInstance:
   m_ObjectHideFlags: 0
